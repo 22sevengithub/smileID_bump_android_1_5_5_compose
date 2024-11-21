@@ -1,5 +1,5 @@
 group "com.smileidentity.flutter"
-version findProperty("SDK_VERSION") ?: "10.2.5"
+version findProperty("SDK_VERSION") ?: "10.3.7"
 
 buildscript {
     ext.kotlin_version = "1.9.10"
@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.1.4"
+        classpath "com.android.tools.build:gradle:8.7.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jlleitschuh.gradle:ktlint-gradle:12.1.1"
     }
@@ -29,7 +29,7 @@ apply plugin: "org.jlleitschuh.gradle.ktlint"
 
 android {
     namespace group
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 21
